@@ -1,0 +1,31 @@
+### Generated using RobotDashboard (v5.0.0 4-18) ###
+### On Friday 10:20:52 @ 13/03/2020
+### By ouss
+
+[22]
+#[Scene 22]#
+#autostart=true
+#safereturn=false
+# *** ROBOT 6 ****
+6;driveBezier;4600;300;4600;225;16;0
+6;driveBezier;4350;300;4475;300;16;0
+6;driveBezier;3925;675;4125;500;16;0
+6;driveBezier;3750;725;3825;700;16;0
+6;driveBezier;3125;700;3425;725;16;0
+6;driveBezier;2600;700;2850;700;16;0
+6;driveBezier;2575;950;2575;825;16;0
+6;driveBezier;2625;1000;2600;975;16;0
+6;driveBezier;2700;1025;2650;1025;16;0
+6;driveBezier;2500;1025;2600;1025;16;0
+6;driveBezier;2350;1200;2425;1125;16;0
+6;driveBezier;2375;1425;2350;1325;16;0
+6;driveBezier;2625;1550;2500;1500;16;0
+6;driveBezier;4225;1500;3425;1525;16;0
+6;driveBezier;4575;1475;4400;1500;16;0
+6;driveBezier;4600;1125;4575;1300;16;0
+6;driveBezier;4450;1250;4525;1200;16;0
+6;driveBezier;4350;1150;4400;1200;16;0
+6;driveBezier;4375;925;4350;1050;16;0
+6;driveBezier;4325;775;4350;850;16;0
+6;driveBezier;4075;700;4200;750;16;0
+

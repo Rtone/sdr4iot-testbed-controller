@@ -1,0 +1,8 @@
+# Sample commands:
+# ansible nodes -m ping
+# ansible nodes -m shell -a "uptime"
+
+[nodes]
+{% for node in nodes %}
+{{ node.name }} ansible_ssh_host={{ node.name }} ansible_ssh_port=22 ansible_ssh_user={{ user.ssh }}
+{% endfor %}

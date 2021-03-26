@@ -1,0 +1,29 @@
+Host bastion.test.iminds.be proxy0
+    User {{ user.ssh }}
+    HostName bastion.test.iminds.be
+    Port 22
+    IdentityFile ./id_rsa
+    ProxyCommand none
+    BatchMode yes
+    PasswordAuthentication no
+    EscapeChar none
+    UserKnownHostsFile known_host_proxy_0
+    CheckHostIP no
+    StrictHostKeyChecking yes
+
+{% for node in nodes %}
+{%- if (not include or node.name in include) and (not exclude or node.name not in exclude) -%}
+Host {{ node.name }}
+    HostName {{ node.name }}.wilab2.ilabt.iminds.be
+    Port 22
+    User {{ user.ssh }}
+    IdentityFile ./id_rsa
+    ForwardAgent yes
+    ProxyCommand            ssh -F ssh-config proxy0 -W %h:%p
+    TCPKeepAlive            yes
+    Compression             no
+    CheckHostIP no
+    StrictHostKeyChecking no
+{{ '\n' }}
+{%- endif -%}
+{% endfor %}

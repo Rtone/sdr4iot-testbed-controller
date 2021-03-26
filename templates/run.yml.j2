@@ -1,0 +1,68 @@
+---
+action: RUN
+deleteOn:
+  failBecomeReady: false
+  failConnectivityTest: false
+  failCreate: true
+  failESpec: false
+  failLinkTest: false
+experiment:
+  eSpec: null
+  overrideESpecRSpec: false
+  provision: {}
+  requestRSpec:
+    bindUnboundNodesUrn: urn:publicid:IDN+wilab2.ilabt.iminds.be+authority+cm
+    providedContentSource: |
+        <rspec xmlns="http://www.geni.net/resources/rspec/3" type="request" generated_by="jFed RSpec Editor" generated="2020-01-07T23:37:12.788+01:00" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:delay="http://www.protogeni.net/resources/rspec/ext/delay/1" xmlns:jfed-command="http://jfed.iminds.be/rspec/ext/jfed-command/1" xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:jfed-ssh-keys="http://jfed.iminds.be/rspec/ext/jfed-ssh-keys/1" xmlns:jfed="http://jfed.iminds.be/rspec/ext/jfed/1" xmlns:sharedvlan="http://www.protogeni.net/resources/rspec/ext/shared-vlan/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd ">
+        {% for node in nodes %} 
+          {%- if (not include or node.name in include) and (not exclude or node.name not in exclude) -%}
+          <node client_id="{{ node.name }}" exclusive="true" component_manager_id="urn:publicid:IDN+wilab2.ilabt.iminds.be+authority+cm" component_id="urn:publicid:IDN+wilab2.ilabt.iminds.be+node+{{ node.name }}">
+            <sliver_type name="raw-pc">
+              <disk_image name="{{ images[node.image] }}"/>
+            </sliver_type>
+            <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="434.5" y="479.5"/>
+          </node>
+          {%- endif -%}
+        {% endfor %}
+        </rspec>
+    source: PROVIDE_CONTENT
+  runLinkTest: true
+  slice:
+    expireTimeMin: 120
+    failIfNoProject: true
+    failOnExistingSlice: false
+    project: sdr4iot
+    projectSource: PROVIDED
+    sliceName: "{{ env('SLICE') }}"
+  waitForReady:
+    maxTimeMin: 30
+proxy:
+  useForCalls: null
+  useForSsh: null
+shareWith:
+  projectMembers: false
+  users: []
+sshKeys:
+  extraKeys: []
+  extraUsernames: []
+  rspec: true
+  shareWith: true
+  userCert: true
+  userKeys: true
+user:
+  password: {{ env('USER_PEM_PASSWORD') }}
+  passwordMethod: DIRECT
+  pem:
+  - {{ env('USER_PEM', "user.pem") }}
+  speaksForCredential: []
+output:
+  ansibleDir: {{ env('ANSIBLE_PATH') }}/auto
+actionOutputs:
+    - format: TEXT
+      target: FILE
+      filename: action.txt
+
+callOutputs:
+    - format: HTML
+      target: FILE
+      filename: calls.html

@@ -1,0 +1,113 @@
+nodes:
+    - name: server9
+      image: sdr
+      usrp: 1
+    - name: server10
+      image: sdr
+      usrp: 2
+    - name: server11
+      image: sdr
+      usrp: 3
+    - name: server15
+      image: sdr
+      usrp: 5
+    - name: server12
+      image: sdr
+      usrp: 6
+    - name: server13
+      image: sdr
+      usrp: 4
+    - name: mobile1
+      image: mobile
+      apk: sdr4iot-ble-simulator-debug-11-b.apk
+      app: io.github.webbluetoothcg.bletestperipheral.sdr4iot
+      activity: Peripherals
+    - name: mobile2
+      image: mobile
+      apk: sdr4iot-ble-simulator-debug-11-b.apk
+      app: io.github.webbluetoothcg.bletestperipheral.sdr4iot
+      activity: Peripherals
+    - name: mobile3
+      image: mobile
+      apk: sdr4iot-ble-simulator-debug-11-b.apk
+      app: io.github.webbluetoothcg.bletestperipheral.sdr4iot
+      activity: Peripherals
+    - name: mobile4
+      image: mobile
+      apk: sdr4iot-ble-simulator-debug-11-b.apk
+      app: io.github.webbluetoothcg.bletestperipheral.sdr4iot
+      activity: Peripherals
+    - name: mobile5
+      image: mobile
+      apk: sdr4iot-ble-simulator-debug-11-b.apk
+      app: io.github.webbluetoothcg.bletestperipheral.sdr4iot
+      activity: Peripherals
+    - name: mobile6
+      image: mobile
+      apk: sdr4iot-ble-simulator-debug-11-b.apk
+      app: io.github.webbluetoothcg.bletestperipheral.sdr4iot
+      activity: Peripherals
+    - name: mobile7
+      image: mobile
+      apk: sdr4iot-ble-simulator-debug-11-b.apk
+      app: io.github.webbluetoothcg.bletestperipheral.sdr4iot
+      activity: Peripherals  
+    - name: mobile8
+      image: mobile
+      apk: sdr4iot-ble-simulator-debug-11-b.apk
+      app: io.github.webbluetoothcg.bletestperipheral.sdr4iot
+      activity: Peripherals
+    - name: mobile9
+      image: mobile
+      apk: sdr4iot-ble-simulator-debug-11-b.apk
+      app: io.github.webbluetoothcg.bletestperipheral.sdr4iot
+      activity: Peripherals
+    - name: mobile10
+      image: mobile
+      apk: sdr4iot-ble-simulator-debug-11-b.apk
+      app: io.github.webbluetoothcg.bletestperipheral.sdr4iot
+      activity: Peripherals  
+    - name: mobile11
+      image: mobile
+      apk: sdr4iot-ble-simulator-debug-11-b.apk
+      app: io.github.webbluetoothcg.bletestperipheral.sdr4iot
+      activity: Peripherals
+    - name: mobile12
+      image: mobile
+      apk: sdr4iot-ble-simulator-debug-11-b.apk
+      app: io.github.webbluetoothcg.bletestperipheral.sdr4iot
+      activity: Peripherals
+    - name: mobile13
+      image: mobile
+      apk: sdr4iot-ble-simulator-debug-11-b.apk
+      app: io.github.webbluetoothcg.bletestperipheral.sdr4iot
+      activity: Peripherals
+    - name: mobile14
+      image: mobile
+      apk: sdr4iot-ble-simulator-debug-11-b.apk
+      app: io.github.webbluetoothcg.bletestperipheral.sdr4iot
+      activity: Peripherals
+    - name: mobile15
+      image: mobile
+      apk: sdr4iot-ble-simulator-debug-11-b.apk
+      app: io.github.webbluetoothcg.bletestperipheral.sdr4iot
+      activity: Peripherals
+    - name: zotacC2
+      image: mcu
+    - name: zotacD2
+      image: mcu
+    - name: zotacC3
+      image: mcu
+    - name: zotacD4
+      image: mcu
+    - name: apuN2
+      image: mcu
+    - name: apuP22
+      image: mcu
+    - name: apuQ2
+      image: mcu
+   
+images:
+    sdr: urn:publicid:IDN+wilab2.ilabt.iminds.be+image+cognitiveradio:UBU16_gnuradio3-7-9
+    mobile: urn:publicid:IDN+wilab2.ilabt.iminds.be+image+wall2-ilabt-iminds-be:LTE_Android_Ubuntu_14_04_v1
+    mcu: urn:publicid:IDN+wilab2.ilabt.iminds.be+image+wall2-ilabt-iminds-be:LTE_UE_Ubuntu_14_04_64bit_v2

@@ -1,0 +1,6 @@
+/run/
+/apks/
+/robot-token
+/robot-token-date
+/communicator.log
+/conf/user-*.yml

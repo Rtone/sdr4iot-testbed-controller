@@ -1,0 +1,51 @@
+### Generated using RobotDashboard (v5.0.0 4-18) ###
+### On Tuesday 16:32:26 @ 10/03/2020
+### By ouss
+
+[21]
+#[Scene 21]#
+#autostart=true
+#safereturn=false
+# *** ROBOT 8 ****
+8;driveBezier;3875;275;3875;225;16;0
+8;driveBezier;5350;300;4600;300;16;0
+8;driveBezier;5475;475;5400;400;16;0
+8;driveBezier;5975;475;5725;475;16;0
+8;driveBezier;6000;850;5975;675;16;0
+8;driveBezier;5675;800;5825;825;16;0
+8;driveBezier;5350;775;5500;800;16;0
+8;driveBezier;5375;1000;5350;900;16;0
+8;driveBezier;5375;1900;5375;1450;16;0
+8;driveBezier;5300;1950;5325;1925;16;0
+8;driveBezier;5200;1850;5250;1900;16;0
+8;driveBezier;4975;1850;5075;1850;16;0
+8;driveBezier;4825;1950;4900;1900;16;0
+8;driveBezier;4725;1875;4775;1925;16;0
+8;driveBezier;4500;1850;4600;1875;16;0
+8;driveBezier;4450;1950;4475;1900;16;0
+8;driveBezier;4225;1850;4325;1900;16;0
+8;driveBezier;4000;1850;4100;1850;16;0
+8;driveBezier;3875;1950;3925;1900;16;0
+8;driveBezier;3725;1950;3800;1950;16;0
+8;driveBezier;3700;1850;3700;1900;16;0
+8;driveBezier;3475;1825;3575;1850;16;0
+8;driveBezier;3450;1625;3450;1725;16;0
+8;driveBezier;3175;1600;3275;1600;16;0
+8;driveBezier;3050;1925;3125;1775;16;0
+8;driveBezier;2975;1825;3000;1875;16;0
+8;driveBezier;2800;1825;2875;1825;16;0
+8;driveBezier;525;1825;1650;1825;16;0
+8;driveBezier;250;1825;375;1825;16;0
+8;driveBezier;200;1000;225;1425;16;0
+8;driveBezier;375;975;275;1000;16;0
+8;driveBezier;425;750;400;875;16;0
+8;driveBezier;200;425;300;600;16;0
+8;driveBezier;450;275;325;350;16;0
+8;driveBezier;2450;275;1450;275;16;0
+8;driveBezier;2500;475;2475;375;16;0
+8;driveBezier;2925;475;2700;475;16;0
+8;driveBezier;3050;300;2975;400;16;0
+8;driveBezier;3475;250;3250;275;16;0
+8;driveBezier;3800;325;3625;300;16;0
+
+

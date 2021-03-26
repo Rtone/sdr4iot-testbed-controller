@@ -1,0 +1,8 @@
+alias ssh='ssh -F ssh-config'
+alias scp='scp -F ssh-config'
+adb()
+{
+        node="$1"
+        shift
+        ssh "$node" "/android/android-sdk-linux/platform-tools/adb" "$@"
+}
