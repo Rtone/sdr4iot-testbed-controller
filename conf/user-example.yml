@@ -1,0 +1,8 @@
+user:
+    ssh: alice
+    pem: /home/alice/.jFed/login-certs/<REDACTED>.pem
+    pem_password: "<REDACTED: set your own password>"
+    ble_dump: "/home/alice/sdr4iot/sdr4iot-ble-rx/"
+    zigbee_dump: "/home/alice/sdr4iot/sdr4iot-zigbee_dump-rx/"
+    zigbee_fw: "/home/alice/sdr4iot/zigbee_fw/"
+
